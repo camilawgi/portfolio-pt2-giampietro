@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Host Grotesk';
+  src: url('fonts/HostGrotesk-Regular.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Host Grotesk', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #1c0414;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3vw;
+}
+
+nav a {
+  color: white;
+  font-size: 26px;
+  font: weight 500px;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/fondo-hero.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 10rem);
+  padding-inline: 5vw;
+}
+
+.text-container {
+  max-width: 80vw;
+  padding-bottom: clamp(2rem, 10vh, 20rem);
+}
+
+h1 {
+  font-size: clamp(3rem, 15vw, 12.5rem);
+  font-weight: bold;
+  line-height: 1;
+}
+
+.subtitulo {
+  font-size: clamp(1.5rem, 3vw, 2.7rem);
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  margin-top: 2vh;
+  padding-left: 3vw;
+}
+
+.anio {
+  font-size: clamp(3rem, 15vw, 12.5rem);
+  font-weight: bold;
+}
+
+.nombre {
+  font-size: clamp(1.5rem, 3vw, 2.7rem);
+  display: block;
+}
+
+.bloque-anio {
+  text-align: left;
+  padding-top: clamp(2rem, 10vh, 20rem);
+}
+.video-section {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1920 / 317;
+  overflow: hidden;
+}
+
+.video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 3rem;
+  font-size: 16px;
+}
+.video-text div {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.video-text p {
+  margin-top: 1rem;
+}
+.video-text span {
+  align-self: flex-end;
+  font-size: 1rem;
+}
