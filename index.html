@@ -12,21 +12,20 @@
       <ul>
         <li><a href="#">proyectos</a></li>
         <li><a href="#">acerca de mí</a></li>
-        <li><a href="#">contacto</a></li>
+        <li><a href="contacto.html">contacto</a></li>
       </ul>
     </nav>
   </header>
-
+  <main>
   <section class="hero">
-    <!-- Bloque de título principal -->
     <div class="text-container">
       <h1>Portfolio</h1>
       <p class="subtitulo">Diseñadora Gráfica</p>
     </div>
     <div class="info">
-      <div class="bloque-anio">
-        <span class="nombre">Giampietro Camila</span>
-        <span class="anio">//2025</span>
+      <div class="bloque-año">
+        <p class="nombre">Giampietro Camila</p>
+        <p class="año">//2025</p>
       </div>
   </section>
 
@@ -37,17 +36,52 @@
 
     <div class="video-text">
       <div>
-        <strong>Giampietro Camila</strong><br>
+        <p>Giampietro Camila</p>
         Graphic Designer
       </div>
       <p>This portfolio contains some of my work,<br>and university assignments as well.</p>
-      <span>Copyright © 2025</span>
+      <p>Copyright © 2025</p>
     </div>
       </section>
       </div>
     </div>
   </section>
-
-</div>
+<section class="presentacion">
+    <div class="contenido">
+      <div class="imagen">
+        <img src="images/conwa1.png" "Conejito">
+      </div>
+      <div class="texto">
+  <h1>Hola! Me dicen <em class="leni">Leni</em></h1>
+  <p>Estudio Diseño y Comunicación Visual en la Universidad de Lanús desde 2017, y trabajo como freelancer desde 2018.</p>
+  <p>Me considero <strong class="destacado">aventurera y curiosa</strong>: me encanta experimentar y mezclar técnicas. <strong class="destacado">Lo manual y lo digital conviven</strong> en mi proceso creativo.</p>
+  <p>Cortar, pegar, colorear y jugar con texturas es tan natural para mí como usar atajos de teclado. Cada proyecto es una oportunidad para probar algo nuevo y <strong class="resaltado">dejar una huella personal</strong>.</p>
+  <p>Busco siempre que lo que hago tenga una impronta única, explorando distintas formas de expresión y representación.</p>
+      </div>
+  </section>
+<section class="proyectos">
+  <h2>//proyectos</h2>
+  <div class="coverflow-container">
+    <button class="arrow left" onclick="moveSlide(-1)">«</button>
+    <div class="carousel">
+      <img src="images/proyecto1.jpg.png" class="slide">
+      <img src="images/proyecto2.png" class="slide">
+      <img src="images/proyecto3.png" class="slide active">
+      <img src="images/proyecto4.png" class="slide">
+      <img src="images/proyecto5.png" class="slide">
+    </div>
+    <button class="arrow right" onclick="moveSlide(1)">»</button>
+  </div>
+  <div class="impronta">
+    <h3>mi impronta</h3>
+    <p>
+      En cada uno de mis proyectos conviven el pulso del trabajo manual y la precisión de las herramientas digitales. Me gusta cortar, pegar, dibujar y luego llevar todo a la pantalla para amplificarlo con color: gamas vibrantes, contrastes atrevidos y texturas que saltan a la vista. El resultado es una mezcla fresca —a veces inesperada— que refleja mi curiosidad por explorar nuevas formas de expresión sin perder la calidez del hecho a mano.
+    </p>
+    <p>¿Te gusta lo que ves? ¡Trabajemos juntos!</p>
+    <a href="contacto.html" class="btn-contacto">contactame</a>
+  </div>
+</section>
+</main>
+<script src="js/carrusel.js"></script>
 </body>
 </html>

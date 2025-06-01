@@ -68,7 +68,7 @@ h1 {
   padding-left: 3vw;
 }
 
-.anio {
+.año {
   font-size: clamp(3rem, 15vw, 12.5rem);
   font-weight: bold;
 }
@@ -78,7 +78,7 @@ h1 {
   display: block;
 }
 
-.bloque-anio {
+.bloque-año {
   text-align: left;
   padding-top: clamp(2rem, 10vh, 20rem);
 }
@@ -118,4 +118,157 @@ h1 {
 .video-text span {
   align-self: flex-end;
   font-size: 1rem;
+}
+.presentacion {
+  width: 100%;
+  min-height: 100vh;
+  background: url('images/fondo.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+}
+
+.contenido {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.imagen img {
+  max-width: 280px;
+  height: auto;
+  display: block;
+}
+
+.texto {
+  max-width: 600px;
+}
+
+.texto h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.leni {
+  color: #e31c79;
+  font-style: italic;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.destacado {
+  color: #ff7700;
+  font-weight: bold;
+}
+
+.resaltado {
+  color: #ff7700;
+  font-weight: bold;
+}
+.coverflow-container {
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 3rem 1rem;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem auto;
+}
+.proyectos {
+  background-image: url('images/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+}
+.carousel {
+ width: 40%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  perspective: 1200px;
+  position: relative;
+  overflow: visible;
+}
+
+.slide {
+  width: 320px;
+  height: 180px; 
+  object-fit: cover;
+  opacity: 0.3;
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+  filter: blur(1px);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.slide.active {
+  width: 400px;
+  height: 266px;
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+  z-index: 3;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 1rem;
+}
+
+.proyectos h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.impronta {
+  max-width: 800px;
+  margin: 3rem auto 0 auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.impronta h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.impronta p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.btn-contacto {
+  display: inline-block;
+  background-color: #e31c79;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
 }
