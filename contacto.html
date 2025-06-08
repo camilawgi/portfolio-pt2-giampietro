@@ -1,13 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>
-        acá va a estar la pagina de contacto
-    </p>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">proyectos</a></li>
+        <li><a href="#">acerca de mí</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+<main class="contacto-page">
+  <section class="contacto-formulario">
+    <div class="titulo-contacto">
+  <h1>//contactame</h1>
+  <div class="barra-texto">
+    <div class="barra-naranja"></div>
+    <div class="texto-barra">
+      <p>¿Te gustaría que sea parte de tu proyecto?</p>
+      <p>Dejame un mensaje y contame un poco más de tu idea!</p>
+    </div>
+  </div>
+</div>
+
+    <form>
+      <label for="nombre">nombre</label>
+      <input type="text" id="nombre" name="nombre">
+
+      <label for="correo">correo electrónico</label>
+      <input type="email" id="correo" name="correo">
+
+      <label for="telefono">teléfono</label>
+      <input type="tel" id="telefono" name="telefono">
+
+      <div class="radio-grupo">
+        <p>¿trabajamos juntos antes?</p>
+        <label><input type="radio" name="trabajamos" value="si"> SI</label>
+        <label><input type="radio" name="trabajamos" value="no"> NO</label>
+      </div>
+
+      <label for="mensaje">contame más de tu proyecto</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+
+      <button type="submit">enviar</button>
+    </form>
+  </section>
+</main>
+  <footer class="footer">
+  <div class="barra-superior"></div>
+
+  <div class="contenido-footer">
+    <div class="columna-izquierda">
+      <h2>//mis redes</h2>
+      <p>Seguime!</p>
+    </div>
+    <div class="columna-derecha">
+      <div class="grupo">
+        <p class="etiqueta">E-mail:</p>
+        <p>camilawgiampietro19@gmail.com</p>
+
+        <p class="etiqueta">Behance:</p>
+        <p>behance.com/giampietrocamila</p>
+      </div>
+      <div class="grupo">
+        <p class="etiqueta">Instagram:</p>
+        <p>/camigiampietro</p>
+
+        <p class="etiqueta">Linkedin:</p>
+        <p>linkedin.com/in/camilagiampietro</p>
+      </div>
+    </div>
+  </div>
+  <div class="barra-inferior"></div>
+</footer>
 </body>
 </html>
