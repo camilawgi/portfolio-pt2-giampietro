@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Host Grotesk';
   src: url('fonts/HostGrotesk-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -474,6 +474,7 @@ h1 {
     padding: 10px 15px;
     color: white;
     font-size: 16px;
+    cursor: text;
 }
 
 .contacto-formulario textarea {
@@ -509,7 +510,6 @@ h1 {
 .contacto-formulario button {
     margin: 20px auto 0;
     padding: 10px 40px;
-    border: none;
     border-radius: 25px;
     background-color: #e31c79;
     color: white;
@@ -521,4 +521,186 @@ h1 {
 
 .contacto-formulario button:hover {
     background-color: #ff9633;
+}
+
+/* A PARTIR DE ACÁ, LOS ESTILOS SON PARA ACERCA-DE-MI */
+
+.acerca {
+  background-image: url(images/fondo.png);
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.titulo-acerca {
+  padding-left: 30px;
+  text-align: left;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 30px;
+  font-size: 32px; 
+  font-family: 'Host Grotesk', sans-serif;
+}
+
+.contenedor-acerca {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.imagen-perfil {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-perfil img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.texto-acerca {
+  max-width: 600px;
+  text-align: left;
+}
+
+.texto-acerca h1 {
+  color: orange;
+  font-size: 43px;
+  margin-bottom: 16px;
+  font-family: 'Host Grotesk', sans-serif;
+}
+
+.texto-acerca p {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-family: 'Host Grotesk', sans-serif;
+}
+
+.boton-contacto {
+  background-color: #e91e63;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Host Grotesk', sans-serif;
+  font-size: 16px;
+}
+.perfil-academico {
+  width: 100%;
+  background-image: url(images/fondo.png);
+  padding: 40px 20px;
+  font-family: 'Host Grotesk', sans-serif;
+}
+
+.perfil-academico h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.educacion-bloque {
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.idiomas-bloque{
+  margin-left: 30px;
+}
+
+.educacion-bloque p,
+.idiomas-bloque p {
+  margin: 4px 0;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.idiomas-grid {
+  display: flex;
+  gap: 250px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+ 
+}
+
+.favoritos {
+  padding: 20px 20px;
+  background-image: url(images/fondo.png);
+  font-family: 'Host Grotesk', sans-serif;
+}
+
+.titulo-favoritos {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 30px;
+}
+
+.contenedor-favoritos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 50px;
+}
+.contenedor-perfil {
+  max-width: 1100px;
+  margin: 80px auto 0 auto;
+}
+
+.item-favorito {
+  text-align: center;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.tipo-box {
+  font-size: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.garamond {
+  font-family: 'Garamond', serif;
+}
+
+
+.color {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.muestra {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.boton-contacto:hover {
+  background-color: #CD7013;
+}
+
+body, button, input, textarea, select {
+  font-family: 'Host Grotesk', sans-serif;
 }
