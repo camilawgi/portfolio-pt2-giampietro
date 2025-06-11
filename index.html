@@ -5,27 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Camila</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon-03.svg" type="image/x-icon">
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">proyectos</a></li>
-        <li><a href="acerca-de-mi.html">acerca de mí</a></li>
-        <li><a href="contacto.html">contacto</a></li>
-      </ul>
-    </nav>
+<nav>
+  <div class="logo">
+    <a href="index.html">
+      <img src="/images/tipy-logo-03.svg"" alt="logo-tipy" />
+    </a>
+  </div>
+  <ul>
+    <li><a href="proyectos.html">proyectos</a></li>
+    <li><a href="acerca-de-mi.html">acerca de mi</a></li>
+    <li><a href="contacto.html">contacto</a></li>
+  </ul>
+</nav>
   </header>
   <main>
   <section class="hero">
     <div class="text-container">
+      
       <h1>Portfolio</h1>
       <p class="subtitulo">Diseñadora Gráfica</p>
     </div>
+    <div class="estrellas"></div>
     <div class="info">
       <div class="bloque-año">
         <p class="nombre">Giampietro Camila</p>
         <p class="año">//2025</p>
+        <div class="flecha-abajo">
+         <div class="flecha-abajo-css"></div>
+      </div>
       </div>
     </div>
   </section>
@@ -83,34 +94,54 @@
     </div>
   </section>
 </main>
-  <footer>
-  <footer class="footer">
-  <div class="barra-superior"></div>
-
-  <div class="contenido-footer">
-    <div class="columna-izquierda">
+ <footer class="footer">
+    <div class="barra-superior"></div>
+    <div class="contenido-footer">
+     <div class="columna-izquierda">
+  <div class="redes-logo">
+    <img src="images/tipyhouse-02.svg" alt="Logo" class="logo-redes">
+    <div>
       <h2>//mis redes</h2>
       <p>Seguime!</p>
     </div>
-    <div class="columna-derecha">
-      <div class="grupo">
-        <p class="etiqueta">E-mail:</p>
-        <p>camilawgiampietro19@gmail.com</p>
+  </div>
+</div>
+      <div class="columna-derecha">
+        <div class="grupo">
+          <p class="etiqueta">E-mail:</p>
+          <p>camilawgiampietro19@gmail.com</p>
 
-        <p class="etiqueta">Behance:</p>
-        <p>behance.com/giampietrocamila</p>
-      </div>
-      <div class="grupo">
-        <p class="etiqueta">Instagram:</p>
-        <p>/camigiampietro</p>
+          <p class="etiqueta">Behance:</p>
+          <p>behance.com/giampietrocamila</p>
+        </div>
+        <div class="grupo">
+          <p class="etiqueta">Instagram:</p>
+          <p>/camigiampietro</p>
 
-        <p class="etiqueta">Linkedin:</p>
-        <p>linkedin.com/in/camilagiampietro</p>
+          <p class="etiqueta">Linkedin:</p>
+          <p>linkedin.com/in/camilagiampietro</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="barra-inferior"></div>
-</footer>
+    <div class="barra-inferior"></div>
+  </footer>
 <script src="js/carrusel.js"></script>
+<script>
+const container = document.querySelector('.estrellas');
+const cantidad = 100;
+
+for (let i = 0; i < cantidad; i++) {
+  const estrella = document.createElement('div');
+  const size = Math.random() * 4 + 3; // entre 3px y 7px
+  estrella.className = 'estrella';
+  estrella.style.width = `${size}px`;
+  estrella.style.height = `${size}px`;
+  estrella.style.top = `${Math.random() * 100}%`;
+  estrella.style.left = `${Math.random() * 100}%`;
+  estrella.style.animationDelay = `${Math.random() * 2}s`;
+  estrella.style.animationDuration = `${1.5 + Math.random()}s`;
+  container.appendChild(estrella);
+}
+</script>
 </body>
 </html>

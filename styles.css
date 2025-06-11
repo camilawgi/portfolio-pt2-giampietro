@@ -1,12 +1,22 @@
+/* |￣￣￣￣￣￣￣|
+|⠀⠀⠀index     ⠀|
+|＿＿＿＿＿＿＿|
+(\__/) ||
+(•ㅅ•) ||
+/ 　 づ
+ */
 @font-face {
   font-family: 'Host Grotesk';
   src: url('fonts/HostGrotesk-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
+
+
 * {
   margin: 0;
 }
+
 
 body {
   font-family: 'Host Grotesk', sans-serif;
@@ -14,39 +24,54 @@ body {
   overflow-x: hidden;
 }
 
-/* |￣￣￣￣￣￣￣|
-|⠀⠀⠀nav      ⠀⠀|
-|＿＿＿＿＿＿＿|
-(\__/) ||
-(•ㅅ•) ||
-/ 　 づ
- */
+
 header {
   background-color: #1c0414;
-  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #3b0521;
+  font-family: 'Host Grotesk', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+
+}
+
+nav .logo img {
+  height: 40px;
 }
 
 nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: flex-end;
-  gap: 3vw;
+  gap: 32px;
+}
+
+nav li {
+  display: inline;
 }
 
 nav a {
-  color: white;
-  font-size: 26px;
-  font-weight: 500;
   text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-/* |￣￣￣￣￣￣￣|
-|⠀⠀⠀hero     ⠀⠀|
-|＿＿＿＿＿＿＿|
-(\__/) ||
-(•ㅅ•) ||
-/ 　 づ
- */
+nav a:hover {
+  color: #ff9100;
+}
+
 .hero {
   width: 100%;
   height: 100vh;
@@ -97,13 +122,29 @@ h1 {
   padding-top: clamp(2rem, 10vh, 20rem);
 }
 
-/* |￣￣￣￣￣￣￣|
-|video de fondo⠀⠀|
-|＿＿＿＿＿＿＿|
-(\__/) ||
-(•ㅅ•) ||
-/ 　 づ
- */
+
+.estrellas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.estrella {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: rgb(246, 121, 5);
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: sparkle 2s infinite ease-in-out alternate;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.6); }
+}
+
+
 .video-section {
   position: relative;
   width: 100%;
@@ -145,13 +186,6 @@ h1 {
   font-size: 1rem;
 }
 
-/* |￣￣￣￣￣￣￣|
-|presentación⠀⠀|
-|＿＿＿＿＿＿＿|
-(\__/) ||
-(•ㅅ•) ||
-/ 　 づ
- */
 .presentacion {
   width: 100%;
   min-height: 100vh;
@@ -214,13 +248,6 @@ h1 {
   color: #ffffff;
 }
 
-/* |￣￣￣￣￣￣￣|
-|⠀⠀carrusel  ⠀⠀|
-|＿＿＿＿＿＿＿|
-(\__/) ||
-(•ㅅ•) ||
-/ 　 づ
- */
 .proyectos {
   background-image: url('images/fondo.png');
   background-size: cover;
@@ -256,7 +283,6 @@ h1 {
   gap: 1.5rem;
   perspective: 1200px;
   position: relative;
-  overflow: visible;
 }
 
 .slide {
@@ -290,14 +316,7 @@ h1 {
   padding: 1rem;
 }
 
-/* |￣￣￣￣￣￣￣|
-|⠀⠀⠀impronta ⠀|
-|＿＿＿＿＿＿＿|
-(\__/) ||
-(•ㅅ•) ||
-/ 　 づ
 
- */
 .impronta {
   max-width: 800px;
   margin: 3rem auto 0 auto;
@@ -335,6 +354,7 @@ h1 {
   width: 100%;
 }
 
+
 .barra-superior {
   height: 10px;
   background-color: #d47300;
@@ -369,6 +389,16 @@ h1 {
   flex-wrap: wrap;
 }
 
+.redes-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-redes {
+  width: 230px;
+  height: auto;
+}
 .grupo {
   display: flex;
   flex-direction: column;
@@ -391,12 +421,18 @@ h1 {
   background-color: #961a68;
 }
 
-/* A PARTIR DE ACÁ, SON LOS ESTILOS PARA LA PÁGINA CONTACTO */
+/* |￣￣￣￣￣￣￣|
+|contacto.html⠀|
+|＿＿＿＿＿＿＿|
+(\__/) ||
+(•ㅅ•) ||
+/ 　 づ
+ */
 
 .contacto-page {
     display: flex;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 200px 20px;
     background-image: url(images/fondo.png);
     min-height: 100vh;
 }
@@ -523,7 +559,13 @@ h1 {
     background-color: #ff9633;
 }
 
-/* A PARTIR DE ACÁ, LOS ESTILOS SON PARA ACERCA-DE-MI */
+/* |￣￣￣￣￣￣￣|
+|acerca-de-mi.html|
+|＿＿＿＿＿＿＿|
+(\__/) ||
+(•ㅅ•) ||
+/ 　 づ
+ */
 
 .acerca {
   background-image: url(images/fondo.png);
@@ -703,4 +745,182 @@ h1 {
 
 body, button, input, textarea, select {
   font-family: 'Host Grotesk', sans-serif;
+}
+
+/* |￣￣￣￣￣￣￣|
+|proyectos.html⠀|
+|＿＿＿＿＿＿＿|
+(\__/) ||
+(•ㅅ•) ||
+/ 　 づ
+ */
+
+
+.proceso-creativo {
+  min-height: 100vh;
+  background-image: url(images/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: left;
+  font-family: 'Host Grotesk', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proceso-creativo__contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.proceso-creativo__imagen {
+  width: 600px;
+  height: auto;
+}
+
+.proceso-creativo__texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: right;
+  align-self: flex-start;
+  color: white;
+  margin-left: auto;
+}
+
+.proceso-creativo__linea-grande {
+  font-size: 4.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.proceso-creativo__linea-rosa {
+  color: #c02189;
+}
+
+.proceso-creativo__linea-pequena {
+  font-size: 3rem;
+  color: #ff9300;
+  margin: 0;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoria {
+  padding: 3rem 2rem;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.categoria--branding {
+  background-image: url(images/segundo\ proceso.png);
+}
+
+.categoria--editorial {
+  background-image: url(images/segundo\ proceso\ 2.png);
+}
+
+.categoria--web {
+  background-image: url(images/textura2.png);
+}
+
+.categoria__titulo {
+  font-family: 'Host Grotesk', sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.categoria__titulo.derecha {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.categoria__titulo.izquierda {
+  text-align: left;
+  align-self: flex-start;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 100%;
+}
+
+.galeria__item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.galeria__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeria__item:hover img {
+  transform: scale(1.05);
+}
+
+.galeria__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.galeria__item:hover .galeria__overlay {
+  opacity: 1;
+}
+
+.galeria__texto {
+  color: rgb(255, 255, 255);
+  font-family: 'Host Grotesk', sans-serif;
+  font-size: 1rem;
+  text
+}
+
+.flecha-abajo-css {
+  width: 30px;
+  height: 30px;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  transform: rotate(45deg); /* posición inicial */
+  margin: 30px auto 0;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(45deg);
+  }
 }
