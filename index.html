@@ -12,7 +12,7 @@
 <nav>
   <div class="logo">
     <a href="index.html">
-      <img src="/images/tipy-logo-03.svg"" alt="logo-tipy" />
+      <img src="/images/tipy-logo-03.svg"" alt="logo-tipy" /> <!-- Acordate de ponerle un height y width a las etiquetas img dentro de html. Se te está rompiendo la imagen por el primer /, borralo-->
     </a>
   </div>
   <ul>
@@ -34,11 +34,11 @@
       <div class="bloque-año">
         <p class="nombre">Giampietro Camila</p>
         <p class="año">//2025</p>
-        <div class="flecha-abajo">
+        <div class="flecha-abajo"> <!-- No necesitas dos divs acá, aplicale la clase flecha-abajo-css a este y ta. -->
          <div class="flecha-abajo-css"></div>
       </div>
       </div>
-    </div>
+    </div> <!-- Acá estas usando muchos divs, reemplaza alguno por un article. -->
   </section>
 
   <section class="video-section">
@@ -51,7 +51,7 @@
         <p class="negrita">Giampietro Camila</p>
         <p class="negrita">Graphic Designer</p>
       </div>
-      <p>This portfolio contains some of my work,<br>and university assignments as well.</p>
+      <p>This portfolio contains some of my work,<br>and university assignments as well.</p> <!-- No uses br! Si queres cortar lineas, podes o usar dos p o manejar el ancho de la caja de texto con un max-width en css. -->
       <p>Copyright © 2025</p>
     </div>
   </section>
@@ -95,7 +95,7 @@
   </section>
 </main>
  <footer class="footer">
-    <div class="barra-superior"></div>
+    <div class="barra-superior"></div> <!-- No es necesario un div para una barra, chusmea como funciona la propiedad border y que podes elegir que tenga un solo lado con borde. -->
     <div class="contenido-footer">
      <div class="columna-izquierda">
   <div class="redes-logo">
