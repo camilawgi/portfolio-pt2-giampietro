@@ -1,156 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proyectos</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/favicon-03.svg" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/favicon-03.svg" type="image/x-icon" />
 </head>
 <body>
+  <section class="estrellas"></section>
 
   <header>
-    <nav>
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/tipy-logo-03.svg" alt="logo-tipy" />
-        </a>
-      </div>
-      <ul>
-        <li><a href="proyectos.html">proyectos</a></li>
-        <li><a href="acerca-de-mi.html">acerca de mi</a></li>
-        <li><a href="contacto.html">contacto</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/tipy-logo-03.svg" alt="Logo Tipy House" class="logo-img">
+    </a>
+  </div>
+  <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="acerca-de-mi.html">Acerca de mí</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  </nav>
   </header>
 
   <main>
     <section class="proceso-creativo">
-      <div class="proceso-creativo__contenido">
-        <img src="images/about-me-conejko.png" alt="dibujo de conejo" class="proceso-creativo__imagen">
-        <div class="proceso-creativo__texto">
+      <section class="proceso-creativo__contenido">
+        <img src="images/about-me-conejko.png" alt="dibujo de conejo" class="proceso-creativo__imagen" />
+        <section class="proceso-creativo__texto">
           <p class="proceso-creativo__linea-grande">sé parte de mi</p>
           <p class="proceso-creativo__linea-grande proceso-creativo__linea-rosa">proceso creativo</p>
           <p class="proceso-creativo__linea-pequena">un vistazo</p>
           <p class="proceso-creativo__linea-pequena">a mi trabajo</p>
-        </div>
-      </div>
+        </section>
+      </section>
     </section>
 
     <section class="categoria categoria--branding">
       <h2 class="categoria__titulo derecha">//branding</h2>
-      <div class="galeria">
-        <div class="galeria__item">
-          <img src="images/saude-1.png" alt="Logotipo Saude">
-          <div class="galeria__overlay"><p class="galeria__texto">Este trabajo se trató de desarrollar una identidad para un centro cultural, en este caso de Mozambique. </p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/saude-2.png" alt="Estética Saude">
-          <div class="galeria__overlay"><p class="galeria__texto">La estética buscó alejarse de esa concepción violenta que se tiene del país, reemplazandola por una versión vitalizada y brillante.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/saude-3.png" alt="Merch Saude">
-          <div class="galeria__overlay"><p class="galeria__texto">Para el desarrollo del sistema de posters, se eligió una estética impactante y colorida, que invite a visitar el centro cultural.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/saude-4.png" alt="Proyecto 4">
-          <div class="galeria__overlay"><p class="galeria__texto">En el merch se mantuvo ésta estética vital y colorida, con colores que representen elementos cruciales de su cultura.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/hiro-1.png" alt="Logotipo Hiroshima">
-          <div class="galeria__overlay"><p class="galeria__texto">Para este trabajo, tuve que desarrollar una marca para lo que serían los juegos olimpicos en una ciudad al azar, en este caso, Hiroshima.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/hiro-2.png" alt="Estética Hiroshima">
-          <div class="galeria__overlay"><p class="galeria__texto">Para la estética elegí elementos representativos de la ciudad, además de colorimetría que nos conduzca a Japón, el renacer y la vitalidad de los deportistas.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/hiro-3.png" alt="Merch Hiroshima">
-          <div class="galeria__overlay"><p class="galeria__texto">Se desarrolló,entre otras cosas, un sistema de estampillas, así como también la arquigrafía de los alrededores donde hipoteticamente se disputarian estos juegos.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/hiro-4.png" alt="Posters Hiroshima">
-          <div class="galeria__overlay"><p class="galeria__texto">Los posters que se desarrollaron, se encontrarían dispuestos a lo largo de la ciudad, e invitarían a la multitud a unirse, con una estética vital y fuerte.</p></div>
-        </div>
-      </div>
+      <section class="galeria">
+        <article class="galeria__item">
+          <img src="images/saude-1.png" alt="Logotipo Saude" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Este trabajo se trató de desarrollar una identidad para un centro cultural, en este caso de Mozambique.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/saude-2.png" alt="Estética Saude" />
+          <aside class="galeria__overlay"><p class="galeria__texto">La estética buscó alejarse de esa concepción violenta que se tiene del país, reemplazándola por una versión vitalizada y brillante.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/saude-3.png" alt="Merch Saude" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Para el desarrollo del sistema de posters, se eligió una estética impactante y colorida, que invite a visitar el centro cultural.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/saude-4.png" alt="Proyecto 4" />
+          <aside class="galeria__overlay"><p class="galeria__texto">En el merch se mantuvo esta estética vital y colorida, con colores que representen elementos cruciales de su cultura.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/hiro-1.png" alt="Logotipo Hiroshima" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Para este trabajo, tuve que desarrollar una marca para lo que serían los juegos olímpicos en una ciudad al azar, en este caso, Hiroshima.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/hiro-2.png" alt="Estética Hiroshima" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Para la estética elegí elementos representativos de la ciudad, además de colorimetría que nos conduzca a Japón, el renacer y la vitalidad de los deportistas.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/hiro-3.png" alt="Merch Hiroshima" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Se desarrolló, entre otras cosas, un sistema de estampillas, así como también la arquigrafía de los alrededores donde hipotéticamente se disputarían estos juegos.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/hiro-4.png" alt="Posters Hiroshima" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Los posters que se desarrollaron se encontrarían dispuestos a lo largo de la ciudad, e invitarían a la multitud a unirse, con una estética vital y fuerte.</p></aside>
+        </article>
+      </section>
     </section>
 
     <section class="categoria categoria--editorial">
       <h2 class="categoria__titulo izquierda">//editorial</h2>
-      <div class="galeria">
-        <div class="galeria__item">
-          <img src="images/editorial-1.png" alt="Editorial 1">
-          <div class="galeria__overlay"><p class="galeria__texto">Tapa de el álbum Canvas,de Nu'est. En el mismo se usaron técnicas mixtas (pintura y tratamiento digital) para llegar a el resultado deseado. </p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/editorial-2.png" alt="Editorial 2">
-          <div class="galeria__overlay"><p class="galeria__texto">Desarrollo de una revista como un proyecto de la universidad.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/editorial-3.png" alt="Editorial 3">
-          <div class="galeria__overlay"><p class="galeria__texto">Se trata de un cronograma,también desarrollado para el Centro cultural de Mozambique.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/editorial-4.png" alt="Editorial 4">
-          <div class="galeria__overlay"><p class="galeria__texto">Interior de un folleto realizado para el Centro Cultural Mozambique.</p></div>
-        </div>
-      </div>
+      <section class="galeria">
+        <article class="galeria__item">
+          <img src="images/editorial-1.png" alt="Editorial 1" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Tapa del álbum Canvas, de Nu'est. En el mismo se usaron técnicas mixtas (pintura y tratamiento digital) para llegar al resultado deseado.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/editorial-2.png" alt="Editorial 2" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Desarrollo de una revista como un proyecto de la universidad.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/editorial-3.png" alt="Editorial 3" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Se trata de un cronograma, también desarrollado para el Centro Cultural de Mozambique.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/editorial-4.png" alt="Editorial 4" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Interior de un folleto realizado para el Centro Cultural Mozambique.</p></aside>
+        </article>
+      </section>
     </section>
 
     <section class="categoria categoria--web">
       <h2 class="categoria__titulo derecha">//digital</h2>
-      <div class="galeria">
-        <div class="galeria__item">
-          <img src="images/web-1.png" alt="Proyecto 7">
-          <div class="galeria__overlay"><p class="galeria__texto">Landing page desarrollada para un proyecto de la universidad, en este caso se trata de un rediseño para la página web de Odonto quilmes, un centro odontologico local.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/web-2.png" alt="Proyecto 8">
-          <div class="galeria__overlay"><p class="galeria__texto">Diseño para las redes sociales de los juegos olimpicos de Hiroshima.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/web-3.png" alt="Proyecto 9">
-          <div class="galeria__overlay"><p class="galeria__texto">Aplicación desarrollada para los juegos olimpicos de Hiroshima.</p></div>
-        </div>
-        <div class="galeria__item">
-          <img src="images/web-4.png" alt="Proyecto 10">
-          <div class="galeria__overlay"><p class="galeria__texto">Diseño para las redes sociales de los juegos olimpicos de Hiroshima.</p></div>
-        </div>
-      </div>
+      <section class="galeria">
+        <article class="galeria__item">
+          <img src="images/web-1.png" alt="Proyecto 7" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Landing page desarrollada para un proyecto de la universidad, en este caso se trata de un rediseño para la página web de Odonto Quilmes, un centro odontológico local.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/web-2.png" alt="Proyecto 8" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Diseño para las redes sociales de los juegos olímpicos de Hiroshima.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/web-3.png" alt="Proyecto 9" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Aplicación desarrollada para los juegos olímpicos de Hiroshima.</p></aside>
+        </article>
+        <article class="galeria__item">
+          <img src="images/web-4.png" alt="Proyecto 10" />
+          <aside class="galeria__overlay"><p class="galeria__texto">Diseño para las redes sociales de los juegos olímpicos de Hiroshima.</p></aside>
+        </article>
+      </section>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="barra-superior"></div>
-    <div class="contenido-footer">
-      <div class="columna-izquierda">
-        <div class="redes-logo">
-          <img src="images/tipyhouse-02.svg" alt="Logo" class="logo-redes">
-          <div>
+    <section class="barra-superior"></section>
+    <section class="contenido-footer">
+      <section class="columna-izquierda">
+        <section class="redes-logo">
+          <img src="images/tipyhouse-02.svg" alt="Logo" class="logo-redes" />
+          <header>
             <h2>//mis redes</h2>
             <p>Seguime!</p>
-          </div>
-        </div>
-      </div>
-      <div class="columna-derecha">
-        <div class="grupo">
+          </header>
+        </section>
+      </section>
+
+      <section class="columna-derecha">
+        <section class="grupo">
           <p class="etiqueta">E-mail:</p>
           <p>camilawgiampietro19@gmail.com</p>
-
           <p class="etiqueta">Behance:</p>
           <p>behance.com/giampietrocamila</p>
-        </div>
-        <div class="grupo">
+        </section>
+        <section class="grupo">
           <p class="etiqueta">Instagram:</p>
           <p>/camigiampietro</p>
-
           <p class="etiqueta">Linkedin:</p>
           <p>linkedin.com/in/camilagiampietro</p>
-        </div>
-      </div>
-    </div>
-    <div class="barra-inferior"></div>
+        </section>
+      </section>
+    </section>
+    <section class="barra-inferior"></section>
   </footer>
 
+  <script>
+    const container = document.querySelector('.estrellas');
+    const cantidad = 100;
+
+    for (let i = 0; i < cantidad; i++) {
+      const estrella = document.createElement('div');
+      const size = Math.random() * 4 + 3;
+      estrella.className = 'estrella';
+      estrella.style.width = `${size}px`;
+      estrella.style.height = `${size}px`;
+      estrella.style.top = `${Math.random() * 100}%`;
+      estrella.style.left = `${Math.random() * 100}%`;
+      estrella.style.animationDelay = `${Math.random() * 2}s`;
+      estrella.style.animationDuration = `${1.5 + Math.random()}s`;
+      container.appendChild(estrella);
+    }
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+  });
+</script>
 </body>
 </html>

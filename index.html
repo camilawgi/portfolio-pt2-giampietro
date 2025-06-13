@@ -8,38 +8,38 @@
   <link rel="icon" href="images/favicon-03.svg" type="image/x-icon">
 </head>
 <body>
-  <header>
-<nav>
+<header>
+<nav class="navbar">
   <div class="logo">
     <a href="index.html">
-      <img src="/images/tipy-logo-03.svg"" alt="logo-tipy" />
+      <img src="images/tipy-logo-03.svg" alt="Logo Tipy House" class="logo-img">
     </a>
   </div>
-  <ul>
-    <li><a href="proyectos.html">proyectos</a></li>
-    <li><a href="acerca-de-mi.html">acerca de mi</a></li>
-    <li><a href="contacto.html">contacto</a></li>
+  <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="acerca-de-mi.html">Acerca de mí</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
   </ul>
 </nav>
-  </header>
-  <main>
-  <section class="hero">
-    <div class="text-container">
-      
-      <h1>Portfolio</h1>
-      <p class="subtitulo">Diseñadora Gráfica</p>
-    </div>
-    <div class="estrellas"></div>
-    <div class="info">
-      <div class="bloque-año">
-        <p class="nombre">Giampietro Camila</p>
-        <p class="año">//2025</p>
-        <div class="flecha-abajo">
-         <div class="flecha-abajo-css"></div>
-      </div>
-      </div>
-    </div>
-  </section>
+</header>
+
+<section class="hero">
+      <article class="text-container">
+        <h1>Portfolio</h1>
+        <p class="subtitulo">Diseñadora Gráfica</p>
+      </article>
+      <div class="estrellas"></div>
+      <article class="info">
+        <div class="bloque-año">
+          <p class="nombre">Giampietro Camila</p>
+          <p class="año">//2025</p>
+          <div class="flecha-abajo">
+            <div class="flecha-abajo-css"></div>
+          </div>
+        </div>
+      </article>
+    </section>
 
   <section class="video-section">
     <video autoplay muted loop playsinline>
@@ -56,75 +56,77 @@
     </div>
   </section>
 
-  <section class="presentacion">
-    <div class="contenido">
-      <div class="imagen">
-        <img src="images/conwa1.png" alt="Conejito">
-      </div>
-      <div class="texto">
-        <h1 class="leni-texto">Hola! Me dicen Leni</h1>
-        <p>Estudio Diseño y Comunicación Visual en la Universidad de Lanús desde 2017, y trabajo como freelancer desde 2018.</p>
-        <p class="destacado-texto">Me considero aventurera y curiosa: me encanta experimentar y mezclar técnicas. Lo manual y lo digital conviven en mi proceso creativo.</p>
-        <p class="resaltado-texto">Cortar, pegar, colorear y jugar con texturas es tan natural para mí como usar atajos de teclado. Cada proyecto es una oportunidad para probar algo nuevo y dejar una huella personal.</p>
-        <p>Busco siempre que lo que hago tenga una impronta única, explorando distintas formas de expresión y representación.</p>
-      </div>
-    </div>
-  </section>
+ <section class="presentacion">
+      <article class="contenido">
+        <aside class="conejito">
+          <img src="images/conwa1.png" alt="Conejito" />
+        </aside>
+        <article class="texto">
+          <h1 class="leni-texto">Hola! Me dicen Leni</h1>
+          <p>Estudio Diseño y Comunicación Visual en la Universidad de Lanús desde 2017, y trabajo como freelancer desde 2018.</p>
+          <p class="destacado-texto">Me considero aventurera y curiosa: me encanta experimentar y mezclar técnicas. Lo manual y lo digital conviven en mi proceso creativo.</p>
+          <p class="resaltado-texto">Cortar, pegar, colorear y jugar con texturas es tan natural para mí como usar atajos de teclado. Cada proyecto es una oportunidad para probar algo nuevo y dejar una huella personal.</p>
+          <p>Busco siempre que lo que hago tenga una impronta única, explorando distintas formas de expresión y representación.</p>
+        </article>
+      </article>
+    </section>
 
   <section class="proyectos">
-    <h2>//proyectos</h2>
-    <div class="coverflow-container">
-      <button class="arrow left" onclick="moveSlide(-1)">«</button>
-      <div class="carousel">
-        <img src="images/proyecto1.jpg.png" class="slide">
-        <img src="images/proyecto2.png" class="slide">
-        <img src="images/proyecto3.png" class="slide active">
-        <img src="images/proyecto4.png" class="slide">
-        <img src="images/proyecto5.png" class="slide">
-      </div>
-      <button class="arrow right" onclick="moveSlide(1)">»</button>
-    </div>
-    <div class="impronta">
-      <h3>mi impronta</h3>
-      <p>
-        En cada uno de mis proyectos conviven el pulso del trabajo manual y la precisión de las herramientas digitales. Me gusta cortar, pegar, dibujar y luego llevar todo a la pantalla para amplificarlo con color: gamas vibrantes, contrastes atrevidos y texturas que saltan a la vista. El resultado es una mezcla fresca —a veces inesperada— que refleja mi curiosidad por explorar nuevas formas de expresión sin perder la calidez del hecho a mano.
-      </p>
-      <p>¿Te gusta lo que ves? ¡Trabajemos juntos!</p>
-      <a href="contacto.html" class="btn-contacto">contactame</a>
-    </div>
-  </section>
-</main>
- <footer class="footer">
+      <h2>//proyectos</h2>
+      <article class="coverflow-container">
+        <button class="arrow left" onclick="moveSlide(-1)">«</button>
+        <div class="carousel">
+          <img src="images/proyecto1.jpg.png" class="slide" />
+          <img src="images/proyecto2.png" class="slide" />
+          <img src="images/proyecto3.png" class="slide active" />
+          <img src="images/proyecto4.png" class="slide" />
+          <img src="images/proyecto5.png" class="slide" />
+        </div>
+        <button class="arrow right" onclick="moveSlide(1)">»</button>
+      </article>
+      <article class="impronta">
+        <h3>mi impronta</h3>
+        <p>
+          En cada uno de mis proyectos conviven el pulso del trabajo manual y la precisión de las herramientas digitales. Me gusta cortar, pegar, dibujar y luego llevar todo a la pantalla para amplificarlo con color: gamas vibrantes, contrastes atrevidos y texturas que saltan a la vista. El resultado es una mezcla fresca —a veces inesperada— que refleja mi curiosidad por explorar nuevas formas de expresión sin perder la calidez del hecho a mano.
+        </p>
+        <p>¿Te gusta lo que ves? ¡Trabajemos juntos!</p>
+        <a href="contacto.html" class="btn-contacto">contactame</a>
+      </article>
+    </section>
+  </main>
+
+<footer class="footer">
     <div class="barra-superior"></div>
-    <div class="contenido-footer">
-     <div class="columna-izquierda">
-  <div class="redes-logo">
-    <img src="images/tipyhouse-02.svg" alt="Logo" class="logo-redes">
-    <div>
-      <h2>//mis redes</h2>
-      <p>Seguime!</p>
-    </div>
-  </div>
-</div>
-      <div class="columna-derecha">
-        <div class="grupo">
+    <article class="contenido-footer">
+      <aside class="columna-izquierda">
+        <div class="redes-logo">
+          <img src="images/tipyhouse-02.svg" alt="Logo" class="logo-redes" />
+          <div>
+            <h2>//mis redes</h2>
+            <p>Seguime!</p>
+          </div>
+        </div>
+      </aside>
+      <aside class="columna-derecha">
+        <article class="grupo">
           <p class="etiqueta">E-mail:</p>
           <p>camilawgiampietro19@gmail.com</p>
 
           <p class="etiqueta">Behance:</p>
           <p>behance.com/giampietrocamila</p>
-        </div>
-        <div class="grupo">
+        </article>
+        <article class="grupo">
           <p class="etiqueta">Instagram:</p>
           <p>/camigiampietro</p>
 
           <p class="etiqueta">Linkedin:</p>
           <p>linkedin.com/in/camilagiampietro</p>
-        </div>
-      </div>
-    </div>
+        </article>
+      </aside>
+    </article>
     <div class="barra-inferior"></div>
   </footer>
+
 <script src="js/carrusel.js"></script>
 <script>
 const container = document.querySelector('.estrellas');
@@ -142,6 +144,17 @@ for (let i = 0; i < cantidad; i++) {
   estrella.style.animationDuration = `${1.5 + Math.random()}s`;
   container.appendChild(estrella);
 }
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+  });
 </script>
 </body>
 </html>

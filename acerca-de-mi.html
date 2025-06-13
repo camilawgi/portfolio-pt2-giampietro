@@ -9,16 +9,17 @@
 </head>
 <body>
 <header>
-<nav>
+<nav class="navbar">
   <div class="logo">
     <a href="index.html">
-      <img src="/images/tipy-logo-03.svg"" alt="logo-tipy" />
+      <img src="images/tipy-logo-03.svg" alt="Logo Tipy House" class="logo-img">
     </a>
   </div>
-  <ul>
-    <li><a href="proyectos.html">proyectos</a></li>
-    <li><a href="acerca-de-mi.html">acerca de mi</a></li>
-    <li><a href="contacto.html">contacto</a></li>
+  <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="acerca-de-mi.html">Acerca de mí</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
   </ul>
 </nav>
   </header>
@@ -98,36 +99,46 @@
     </section>
   </main>
 
- <footer class="footer">
+<footer class="footer">
     <div class="barra-superior"></div>
-    <div class="contenido-footer">
-     <div class="columna-izquierda">
-  <div class="redes-logo">
-    <img src="images/tipyhouse-02.svg" alt="Logo" class="logo-redes">
-    <div>
-      <h2>//mis redes</h2>
-      <p>Seguime!</p>
-    </div>
-  </div>
-</div>
-      <div class="columna-derecha">
-        <div class="grupo">
+    <article class="contenido-footer">
+      <aside class="columna-izquierda">
+        <div class="redes-logo">
+          <img src="images/tipyhouse-02.svg" alt="Logo" class="logo-redes" />
+          <div>
+            <h2>//mis redes</h2>
+            <p>Seguime!</p>
+          </div>
+        </div>
+      </aside>
+      <aside class="columna-derecha">
+        <article class="grupo">
           <p class="etiqueta">E-mail:</p>
           <p>camilawgiampietro19@gmail.com</p>
 
           <p class="etiqueta">Behance:</p>
           <p>behance.com/giampietrocamila</p>
-        </div>
-        <div class="grupo">
+        </article>
+        <article class="grupo">
           <p class="etiqueta">Instagram:</p>
           <p>/camigiampietro</p>
 
           <p class="etiqueta">Linkedin:</p>
           <p>linkedin.com/in/camilagiampietro</p>
-        </div>
-      </div>
-    </div>
+        </article>
+      </aside>
+    </article>
     <div class="barra-inferior"></div>
   </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+  });
+</script>
 </body>
 </html>

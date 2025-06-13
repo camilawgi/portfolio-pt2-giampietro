@@ -24,15 +24,6 @@ body {
   overflow-x: hidden;
 }
 
-
-header {
-  background-color: #1c0414;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -40,13 +31,13 @@ nav {
   padding: 16px 32px;
   background-color: #3b0521;
   font-family: 'Host Grotesk', sans-serif;
-  overflow-x: hidden;
   position: relative;
-
+  z-index: 1000;
 }
 
-nav .logo img {
+.logo-img {
   height: 40px;
+  width: auto;
 }
 
 nav ul {
@@ -68,9 +59,14 @@ nav a {
   font-size: 20px;
 }
 
+.nav-links{
+  display: flex;
+}
+
 nav a:hover {
   color: #ff9100;
 }
+
 
 .hero {
   width: 100%;
@@ -133,10 +129,11 @@ h1 {
   position: absolute;
   width: 5px;
   height: 5px;
-  background: rgb(246, 121, 5);
+  background: rgb(255, 255, 255);
   border-radius: 50%;
   opacity: 0.4;
   animation: sparkle 2s infinite ease-in-out alternate;
+  z-index: 1;
 }
 
 @keyframes sparkle {
@@ -205,7 +202,7 @@ h1 {
   max-width: 1200px;
 }
 
-.imagen img {
+.conejito img {
   max-width: 280px;
   height: auto;
   display: block;
@@ -758,8 +755,7 @@ body, button, input, textarea, select {
 
 .proceso-creativo {
   min-height: 100vh;
-  background-image: url(images/fondo.png);
-  background-size: cover;
+  background-color: #0c000c;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
@@ -903,7 +899,7 @@ body, button, input, textarea, select {
   color: rgb(255, 255, 255);
   font-family: 'Host Grotesk', sans-serif;
   font-size: 1rem;
-  text
+  padding: 1rem 1rem;
 }
 
 .flecha-abajo-css {
@@ -911,8 +907,7 @@ body, button, input, textarea, select {
   height: 30px;
   border-bottom: 10px solid white;
   border-right: 10px solid white;
-  transform: rotate(45deg); /* posición inicial */
-  margin: 30px auto 0;
+  transform: rotate(45deg);
   animation: bounce 2s infinite;
 }
 
@@ -922,5 +917,37 @@ body, button, input, textarea, select {
   }
   50% {
     transform: translateY(10px) rotate(45deg);
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 70px;
+    right: 32px;
+    background-color: #3b0521;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }
